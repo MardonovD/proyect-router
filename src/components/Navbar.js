@@ -2,13 +2,21 @@ import React from "react";
 import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
-    <div style={{ display: "flex", alignItems: "space-between" }}>
+    <div style={{ display: "flex", alignItems: "space-between", gap: "15px" }}>
       <span className="logo">REDUX STORE</span>
-      <div>
-        <Link className="navLink" to="/">
+      <div style={{ display: "flex", gap: "20px" }}>
+        <Link
+          className="navLink "
+          style={{ textDecoration: "none", color: "black" }}
+          to="/"
+        >
           Home
         </Link>
-        <Link className="navLink" to="/Card">
+        <Link
+          style={{ textDecoration: "none", color: "black" }}
+          className="navLink"
+          to="/Card"
+        >
           Card
         </Link>
       </div>
