@@ -11,7 +11,9 @@ const Navbar = () => {
         justifyContent: "space-between",
       }}
     >
-      <span className="logo">REDUX STORE</span>
+      <span className="logo" style={{ fontWeight: "700" }}>
+        REDUX STORE
+      </span>
       <div style={{ display: "flex", gap: "20px" }}>
         <Link
           className="navLink "
