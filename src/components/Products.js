@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "../index.css";
 const Products = () => {
   const [products, setProducts] = useState([]);
 
@@ -16,8 +17,9 @@ const Products = () => {
       {products.map((product) => (
         <div className="card" key={product.id}>
           <img src={product.image} alt="" />
-          <h4>{product.title}</h4>
-          <h4>{product.price}</h4>
+          <h6>{product.title}</h6>
+          <h5>{product.price}$</h5>
+          <button className="btn">Add to card</button>
         </div>
       ))}
     </div>
