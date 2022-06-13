@@ -2,13 +2,19 @@ import React from "react";
 import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
-    <div>
-      <span>REDUX STORE</span>
+    <div style={{ display: "flex", alignItems: "space-between" }}>
+      <span className="logo">REDUX STORE</span>
       <div>
-        <Link to="/">Home</Link>
-        <Link to="/Card">Card</Link>
+        <Link className="navLink" to="/">
+          Home
+        </Link>
+        <Link className="navLink" to="/Card">
+          Card
+        </Link>
       </div>
-      <span className="cardCount">Card Items:0</span>
+      <span className="cardCount">
+        <b>Card Items</b>:0
+      </span>
     </div>
   );
 };
