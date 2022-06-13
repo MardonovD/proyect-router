@@ -5,9 +5,10 @@ const Products = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       const res = await fetch("https://fakestoreapi.com/products");
-      const data = res.json();
+      const data = await res.json();
       console.log(data);
     };
+    fetchProducts();
   }, []);
   return (
     <div>
