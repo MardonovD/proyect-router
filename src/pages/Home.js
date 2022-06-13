@@ -3,7 +3,7 @@ import Products from "../components/Products";
 
 const Home = () => {
   return (
-    <div>
+    <div style={{ textAlign: "center" }}>
       <h2 className="heading"> Welcome to the Redux toolkit store</h2>
       <section>
         <h3>Products</h3>

@@ -17,7 +17,7 @@ const Products = () => {
       {products.map((product) => (
         <div className="card" key={product.id}>
           <img src={product.image} alt="" />
-          <h6>{product.title}</h6>
+          <h5>{product.title}</h5>
           <h5>{product.price}$</h5>
           <button className="btn">Add to card</button>
         </div>

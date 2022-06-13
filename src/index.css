@@ -17,10 +17,15 @@ img {
   border-radius: 5px;
 }
 .card {
+  text-align: center;
   width: 250px;
   margin: 10px;
   padding: 10px;
-  background-color: aliceblue;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(240, 248, 255, 0.381);
 }
 .card:hover {
   transform: scale(0.98);
