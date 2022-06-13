@@ -3,7 +3,11 @@ import React from "react";
 const Home = () => {
   return (
     <div>
-      <h1>Home</h1>
+      <h2 className="heading"> Welcome to the Redux toolkit store</h2>
+      <section>
+        <h3>Products</h3>
+        
+      </section>
     </div>
   );
 };
