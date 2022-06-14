@@ -15,3 +15,4 @@ const cardSlise = createSlice({
   },
 });
 export const { add, remove } = cardSlise.actions;
+export default cardSlise.reducer;
