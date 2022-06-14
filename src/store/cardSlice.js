@@ -14,4 +14,4 @@ const cardSlise = createSlice({
     },
   },
 });
-console.log(cardSlise);
+export const { add, remove } = cardSlise.actions;
