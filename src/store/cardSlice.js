@@ -5,7 +5,13 @@ const initialState = [];
 const cardSlise = createSlice({
   name: "card",
   initialState,
-  reducers:{
-    
-  }
+  reducers: {
+    add(state, action) {
+      state.push(action.payload);
+    },
+    remove(state, action) {
+      state = state.filter((item) => item.id !== action.payload);
+    },
+  },
 });
+console.log(cardSlise);
